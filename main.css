@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Amarante:400,700);
+body {
+    background-image: url(pexels-dmitry-demidov-3921045.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    font-family: 'Amarante', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.search-container {
+    display: flex;
+    text-align: right;
+}
+
+#search-input {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: sans-serif;
+}
+
+#search-button,
+#clear-button,
+#Movies,
+#series,
+#box-office,
+#coming-soon {
+    background-color: #070707;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#search-button {
+    margin-left: i0px;
+}
+
+#clear-button,
+#Movies,
+#series,
+#box-office,
+#coming-soon {
+    margin-left: 10px;
+}
+
+#series {
+    background-color: #030303;
+}
+
+.movie-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.movie-description {
+    font-size: 14px;
+    margin: 10px;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .logo a {
+        font-size: 20px;
+    }
+    #search-input {
+        margin-right: 5px;
+    }
+    #search-button,
+    #clear-button,
+    #Movies,
+    #series,
+    #box-office,
+    #coming-soon {
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+    .movie-card {
+        width: 150px;
+    }
+    .movie-title {
+        font-size: 16px;
+    }
+    .movie-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 18px;
+    }
+    #search-input {
+        margin-right: 3px;
+    }
+    #search-button,
+    #clear-button,
+    #Movies,
+    #series,
+    #box-office,
+    #coming-soon {
+        padding: 2px 6px;
+        font-size: 10px;
+    }
+    .movie-card {
+        width: 120px;
+    }
+    .movie-title {
+        font-size: 14px;
+    }
+    .movie-description {
+        font-size: 10px;
+    }
+}
